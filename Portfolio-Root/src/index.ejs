@@ -64,14 +64,15 @@
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
 
   <% if (isLocal) { %>
-  <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@webslate/root-config": "http://localhost:9000/webslate-root-config.js",
-        "@webslate/Portfolio-Navigation": " http://localhost:8080/webslate-Portfolio-Navigation.js"
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "@webslate/root-config": "http://localhost:9000/webslate-root-config.js",
+          "@webslate/Portfolio-Navigation": "http://localhost:8080/webslate-Portfolio-Navigation.js",
+          "@webslate/Portfolio-Resume": "http://localhost:8081/webslate-Portfolio-Resume.js"
+        }
       }
-    }
-  </script>
+    </script>
   <% } %>
 
   <!--

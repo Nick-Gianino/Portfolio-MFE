@@ -1,25 +1,16 @@
 <single-spa-router>
-  <!--
+ 
+  <div class="base">
+    <div class="navigation">
+      <application name="@webslate/Portfolio-Navigation"></application>
+    </div>
 
-    This is the single-spa Layout Definition for your microfrontends.
-    See https://single-spa.js.org/docs/layout-definition/ for more information.
+<!-- This is where the other applications will be -->
 
-  -->
+    <!-- <main class="main">
+      <route default>
+      </route>
+    </main> -->
 
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
-  </route>
-
-  -->
-
-  <main>
-    <route default>
-      <application name="@single-spa/welcome"></application>
-    </route>
-  </main>
+  </div>
 </single-spa-router>

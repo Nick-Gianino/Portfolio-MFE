@@ -1,10 +1,16 @@
 import "./styles.css";
 
 export default function Root(props) {
-   return <nav>
-       <a href="#">Link to React Projects</a>
-       <a href="#">Link to Angular Projects</a>
-       <a href="#">Link to Vue Projects</a>
+   return (
+    <>
+      <div className = "navigation-bar">
 
-      </nav>
-} 
+        <text className = "name-header">Nicholas Gianio</text>
+        <a href="#" className = "navigation-links" >View Resume</a>
+
+        <text className = "react-header">React Projects</text>
+        <a href="#" className = "navigation-links" >Link to Angular Projects</a>
+
+      </div>
+    </> 
+)} 

@@ -1,0 +1,13 @@
+nav{
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-content: start;
+    border: none;
+    
+}
+
+a{
+    color: orange;
+}

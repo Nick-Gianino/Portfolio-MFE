@@ -1,20 +1,16 @@
 <single-spa-router>
- 
   <div class="base">
     <div class="navigation">
       <application name="@webslate/Portfolio-Navigation"></application>
     </div>
 
-    <div>
-      <application name="@webslate/Portfolio-Resume"></application>
-    </div>
-
-<!-- This is where the other applications will be -->
-
-    <!-- <main class="main">
+    <div class="main-area">
       <route default>
+        <application name="@webslate/Portfolio-Resume"></application>
       </route>
-    </main> -->
-
+      <route path="/grid-project">
+        <application name="@webslate/Portfolio-GridProject"></application>
+      </route>
+    </div>
   </div>
 </single-spa-router>

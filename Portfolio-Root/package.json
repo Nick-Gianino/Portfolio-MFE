@@ -1,10 +1,11 @@
 {
   "name": "@webslate/root-config",
   "scripts": {
-    "start": "concurrently \"npm run start:root\" \"npm run start:navigation\" \"npm run start:resume\"",
+    "start": "concurrently \"npm run start:root\" \"npm run start:navigation\" \"npm run start:resume\" \"npm run start:GridProject\"",
     "start:root": "webpack serve --port 9000 --env isLocal",
     "start:navigation": "cd ../Portfolio-Navigation && npm start",
     "start:resume": "cd ../Portfolio-Resume && npm start",
+    "start:GridProject": "cd ../Portfolio-GridProject && npm start",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
     "format": "prettier --write .",

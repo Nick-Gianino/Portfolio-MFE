@@ -17,7 +17,7 @@ export default function Root(props) {
         <a href="#" className="navigation-links" onClick={handleResumeClick}>View Resume</a>
 
         <text className="react-header">React Projects</text>
-        <a href="#" className="navigation-links" onClick={handleAngularProjectsClick}>Link to Angular Projects</a>
+        <a href="#" className="navigation-links" onClick={handleAngularProjectsClick}>View Grid Project</a>
       </div>
     </>
   );

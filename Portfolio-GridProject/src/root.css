@@ -1,0 +1,47 @@
+.Grid-Container{
+    height: 100vh;
+    width: 100%;
+    background-color: #F5F5DC;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.Grid-Title-Outline{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.Grid-Top-Section{
+    height:auto; 
+    text-align: center;
+    display:grid;
+    grid-row: 2;
+    grid-column: 2;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: #F5F5DC;
+    
+}
+
+.Grid-Section-Text{
+    font-size: 32px;
+}
+
+.InterfaceableBox{
+    
+    background-color: black;
+    margin: 10px;
+    
+}
+
+.Grid-Minus-Button{
+    width: auto;
+    height: auto;
+}
+
+.Grid-Box-Area{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}

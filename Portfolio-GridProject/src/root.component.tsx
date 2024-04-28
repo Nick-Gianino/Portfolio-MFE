@@ -1,6 +1,8 @@
 import './root.css'
 import InterfaceableBox from './components/InterfaceableBox';
 import { useState } from 'react';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
 
 
 export default function Root(props) {
@@ -34,6 +36,7 @@ export default function Root(props) {
  
 
   return( 
+    <DndProvider backend={HTML5Backend}>
     <div className = "Grid-Container" >
       <div className="Grid-Title-Outline">
       <section className="Grid-Top-Section">
@@ -47,5 +50,7 @@ export default function Root(props) {
       </section>
       
 
-    </div>);
+    </div>
+    </DndProvider>
+  );
 }

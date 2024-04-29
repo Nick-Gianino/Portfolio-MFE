@@ -6,16 +6,13 @@ import 'react-resizable/css/styles.css';
 function InterfaceableBox() {
 
   return (
-    <div >
       <ResizableBox className='InterfaceableBox'
         resizeHandles={['sw', 'se', 'nw', 'ne', 'w', 'e', 'n', 's']}
         height={200}
         width={200}
         minConstraints={[100, 100]}
-        maxConstraints={[500, 500]}>
-          
+        maxConstraints={[Infinity, Infinity]}>
       </ResizableBox>
-    </div>
   )
 }
 

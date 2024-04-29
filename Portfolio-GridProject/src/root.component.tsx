@@ -11,27 +11,33 @@ export default function Root(props) {
   const renderBoxes = () => {
     return Array(numberOfBoxes)
       .fill(null)
-      .map((_, index) =><div key={index} className={"${boxesCssClass}"}> <InterfaceableBox key={index} /> </div>);
+      .map((_, index) =><div key={index} className={`${boxesCssClass}`}> <InterfaceableBox key={index}  /> </div>);
   }
   
   const handleVisopsBoxes = () => {
     setNumberOfBoxes(1);
-    setBoxesCssClass("Visops-Button");
+    setBoxesCssClass("Visops-Box");
     return;
   }
- 
 
+  const handleOtherBox = () => {
+    setNumberOfBoxes(2);
+    setBoxesCssClass("Other-Box");
+  }
+ 
   return( 
     <div className = "Grid-Container">
       <div className="Grid-Title-Outline">
       <section className="Grid-Top-Section">
         <text className="Grid-Section-Text">Please Select An Option: </text>
          <button className="Grid-Visops-Button" onClick={() => handleVisopsBoxes()}>Work Example</button>
-         <button className = "Grid-Minus-Button">Subtract Box </button>
+         <button className = "Grid-Minus-Button" onClick={() => handleOtherBox()}>Subtract Box </button>
       </section>
       </div>
       <section className = "Grid-Box-Area">
-        {renderBoxes()}
+       
+          {renderBoxes()}
+       
       </section>
     </div>
   );

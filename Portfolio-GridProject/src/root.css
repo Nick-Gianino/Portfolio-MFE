@@ -39,7 +39,9 @@
     width: auto;
     height: auto;
 }
-
+.Grid-Visops-Button{
+    width: 20%;
+}
 .Grid-Box-Area{
     display: grid;
     grid-template-columns: repeat(5, 1fr);

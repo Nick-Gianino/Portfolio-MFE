@@ -42,8 +42,23 @@
 .Grid-Visops-Button{
     width: 20%;
 }
+
 .Grid-Box-Area{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    display: flex;
+}
+
+
+.Visops-Box{
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.Other-Box{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    right: 0;
 }

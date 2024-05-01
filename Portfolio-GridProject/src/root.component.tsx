@@ -17,7 +17,6 @@ export default function Root(props) {
   const handleVisopsBoxes = () => {
     setNumberOfBoxes(1);
     setBoxesCssClass("Visops-Box");
-    return;
   }
 
   const handleOtherBox = () => {

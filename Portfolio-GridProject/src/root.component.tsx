@@ -34,9 +34,7 @@ export default function Root(props) {
       </section>
       </div>
       <section className = "Grid-Box-Area">
-       
           {renderBoxes()}
-       
       </section>
     </div>
   );

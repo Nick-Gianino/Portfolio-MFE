@@ -11,7 +11,7 @@ export default function Root(props) {
   const renderBoxes = () => {
     return Array(numberOfBoxes)
       .fill(null)
-      .map((_, index) =><div key={index} className={`${boxesCssClass}`}> <InterfaceableBox key={index}  /> </div>);
+      .map((_, index) =><div key={index} className={`${boxesCssClass}`}> <InterfaceableBox key={index}/> </div>);
   }
   
   const handleVisopsBoxes = () => {

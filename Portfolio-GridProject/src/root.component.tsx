@@ -7,7 +7,6 @@ export default function Root(props) {
   const [numberOfBoxes, setNumberOfBoxes] = useState(0);
   const [boxesCssClass, setBoxesCssClass] = useState("");
 
-
   const renderBoxes = () => {
     return Array(numberOfBoxes)
       .fill(null)

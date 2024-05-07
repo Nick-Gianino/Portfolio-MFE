@@ -22,6 +22,11 @@ export default function Root(props) {
     setNumberOfBoxes(2);
     setBoxesCssClass("Other-Box");
   }
+
+  const centerBox = () =>{
+    setNumberOfBoxes(1);
+    setBoxesCssClass("center-box");
+  }
  
   return( 
     <div className="Grid-Container">

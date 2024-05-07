@@ -47,8 +47,18 @@ const PersonalResizeable:React.FC<ResizeableComponentProps> = ({
         }
 
     return (
-        <div>
-            
+        <div 
+         ref={componentRef}
+         style={{
+            width,
+            height,
+            resize: 'both',
+            overflow: 'auto',
+            ...style,
+         }}
+         onMouseDown={handleMouseDown}
+        >
+            {children}
         </div>
     );
 };

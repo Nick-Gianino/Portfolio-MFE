@@ -30,7 +30,7 @@ export default function Root(props) {
  
   return( 
     <div className="Grid-Container">
-      <TopBar onVisopsBoxesClick={handleVisopsBoxes} onOtherBoxClick={handleOtherBox} />
+      <TopBar onVisopsBoxesClick={handleVisopsBoxes} onOtherBoxClick={handleOtherBox} onCenterBoxClick={centerBox} />
       <section className="Grid-Box-Area">
         {renderBoxes()}
       </section>

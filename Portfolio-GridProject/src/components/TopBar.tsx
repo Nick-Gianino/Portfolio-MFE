@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'
+import '../root.css'
 
 interface TopBarProps {
   onVisopsBoxesClick: () => void;

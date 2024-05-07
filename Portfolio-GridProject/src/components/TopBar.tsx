@@ -14,7 +14,7 @@ const TopBar: React.FC<TopBarProps> = ({ onVisopsBoxesClick, onOtherBoxClick, on
         <text className="Grid-Section-Text">Please Select An Option: </text>
         <button className="Grid-Visops-Button" onClick={onVisopsBoxesClick}>Work Example</button>
         <button className="Grid-two-box-button" onClick={onOtherBoxClick}>Two Box Example</button>
-        <button className="Grid-Minus-Button" onClick={onhandlePersonalBoxClick}>Center Box Example</button>
+        <button className="Grid-Minus-Button" onClick={onhandlePersonalBoxClick}>Personal Box Example</button>
       </section>
     </div>
   );

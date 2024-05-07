@@ -23,14 +23,14 @@ export default function Root(props) {
     setBoxesCssClass("Other-Box");
   }
 
-  const centerBox = () =>{
+  const handlePersonalBox = () =>{
     setNumberOfBoxes(1);
-    setBoxesCssClass("center-box");
+    setBoxesCssClass("Personal-Box");
   }
  
   return( 
     <div className="Grid-Container">
-      <TopBar onVisopsBoxesClick={handleVisopsBoxes} onOtherBoxClick={handleOtherBox} onCenterBoxClick={centerBox} />
+      <TopBar onVisopsBoxesClick={handleVisopsBoxes} onOtherBoxClick={handleOtherBox} onhandlePersonalBoxClick={handlePersonalBox} />
       <section className="Grid-Box-Area">
         {renderBoxes()}
       </section>

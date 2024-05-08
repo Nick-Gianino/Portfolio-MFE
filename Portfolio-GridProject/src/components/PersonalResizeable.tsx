@@ -21,9 +21,9 @@ const PersonalResizeable:React.FC<ResizeableComponentProps> = ({
 
     useEffect(()=> {
         const handleMouseMove = (event: MouseEvent) => {
-            if(resizing && componentRef.current) {
-                const deltaX = event.clientX - componentRef.current.getBoundingClientRect().left;
-                const deltaY = event.clientY - componentRef.current.getBoundingClientRect().top;
+            if(resizing && compref.current) {
+                const deltaX = event.clientX - compref.current.getBoundingClientRect().left;
+                const deltaY = event.clientY - compref.current.getBoundingClientRect().top;
                 setWidth(`${deltaX}px`);
                 setHeight(`${deltaY}px`);
             }
@@ -48,7 +48,7 @@ const PersonalResizeable:React.FC<ResizeableComponentProps> = ({
 
     return (
         <div 
-         ref={componentRef}
+         ref={compref}
          style={{
             width,
             height,

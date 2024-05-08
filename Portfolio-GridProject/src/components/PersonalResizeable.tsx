@@ -17,7 +17,7 @@ const PersonalResizeable:React.FC<ResizeableComponentProps> = ({
     const [width, setWidth] = useState(initialWidth);
     const [height, setHeight] = useState(initialHeight);
     const [resizing, setResizing] = useState(false);
-    const componentRef = useRef<HTMLDivElement>(null);
+    const compref = useRef<HTMLDivElement>(null);
 
     useEffect(()=> {
         const handleMouseMove = (event: MouseEvent) => {

@@ -1,12 +1,11 @@
 import React from "react";
 import './Portfolio.css';
+import PortfolioRoot from "./components/PortfolioRoot";
 
 export default function Root(props) {
   return(
    <>
-    <div className = "Portfolio-Base">
-      <text>Hello!</text>
-    </div>
+    <PortfolioRoot />
   </>
   )
 }

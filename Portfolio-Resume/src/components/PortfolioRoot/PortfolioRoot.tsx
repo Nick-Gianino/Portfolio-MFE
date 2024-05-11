@@ -4,7 +4,7 @@ import './PortfolioRoot.module.css';
 const PortfolioRoot = () => {
     return (
         <div className = "RootContainer">
-            Yo im here too
+            Yo im here too also
         </div>
     );
 };

@@ -5,7 +5,10 @@ import TopBar from '../TopBar/TopBar';
 const PortfolioRoot = () => {
     return (
         <div className = "RootContainer">
-           <TopBar/>
+            <div className = "topbar">
+                <TopBar/>
+            </div>
+          
         </div>
     );
 };

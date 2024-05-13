@@ -8,6 +8,9 @@ const PortfolioRoot = () => {
             <div className = "topbar">
                 <TopBar/>
             </div>
+            <div className = "Resume-Area">
+                
+            </div>
           
         </div>
     );

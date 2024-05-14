@@ -2,7 +2,7 @@ import React from 'react';
 
 const PortfolioResume = () => {
     return (
-        <div>
+        <div className = "PortfolioResume">
             
         </div>
     );

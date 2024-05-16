@@ -5,8 +5,8 @@ const PortfolioResume = () => {
         <div className = "PortfolioResume">
             <h1 className = "NameHeader">Nicholas Gianino</h1>
             <h2 className = "workHeader">Software Engineer</h2>
-            <div>
-                
+            <div className = "jobheader">
+
             </div>
         </div>
     );

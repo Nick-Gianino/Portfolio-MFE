@@ -1,7 +1,10 @@
 import "./styles.css";
 import { navigateToUrl } from 'single-spa';
+import { useState } from 'react';
 
 export default function Root(props) {
+  const [isHovered, setIsHovered] = useState(false);
+
   const handleResumeClick = () => {
     navigateToUrl('/resume');
   };
@@ -11,14 +14,16 @@ export default function Root(props) {
   };
 
   return (
-    <>
-      <div className="navigation-bar">
-        <text className="name-header">Nicholas Gianio</text>
-        <a href="#" className="navigation-links" onClick={handleResumeClick}>View Resume</a>
+    <div
+      className ={`navigation-circle ${isHovered ? 'hovered' : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      >
 
-        <text className="react-header">React Projects</text>
+      <div className="navigation-bar">
+        <a href="#" className="navigation-links" onClick={handleResumeClick}>View Resume</a>
         <a href="#" className="navigation-links" onClick={handleAngularProjectsClick}>View Grid Project</a>
       </div>
-    </>
+    </div>
   );
 }
